@@ -1,0 +1,49 @@
+2011-10-16 00:18:48 Error: [MissingControllerException] Controller class InflectorsController could not be found.
+#0 /Users/predominant/Projects/csf/inflector/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-16 00:20:14 Error: [MissingViewException] View file "/Users/predominant/Projects/csf/inflector/app/View/Inflectors/show.ctp" is missing.
+#0 /Users/predominant/Projects/csf/inflector/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/predominant/Projects/csf/inflector/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(InflectorsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/predominant/Projects/csf/inflector/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-16 00:35:25 Error: [MissingControllerException] Controller class SomethingController could not be found.
+#0 /Users/predominant/Projects/csf/inflector/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-16 01:10:22 Error: [MissingControllerException] Controller class OctopusController could not be found.
+#0 /Users/predominant/Projects/csf/inflector/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-16 01:10:30 Error: [MissingControllerException] Controller class OctopusController could not be found.
+#0 /Users/predominant/Projects/csf/inflector/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-16 01:29:16 Error: [MissingViewException] View file "/Users/predominant/Projects/csf/inflector/app/View/Inflectors/json/show.ctp" is missing.
+#0 /Users/predominant/Projects/csf/inflector/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/predominant/Projects/csf/inflector/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(InflectorsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/predominant/Projects/csf/inflector/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-16 02:00:46 Error: [MissingViewException] View file "/Users/predominant/Projects/csf/inflector/app/View/Inflectors/json/show.ctp" is missing.
+#0 /Users/predominant/Projects/csf/inflector/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/predominant/Projects/csf/inflector/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(InflectorsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/predominant/Projects/csf/inflector/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-16 02:01:04 Error: [MissingLayoutException] Layout file "/Users/predominant/Projects/csf/inflector/app/View/Layouts/json/default.ctp" is missing.
+#0 /Users/predominant/Projects/csf/inflector/lib/Cake/View/View.php(396): View->_getLayoutFileName('default')
+#1 /Users/predominant/Projects/csf/inflector/lib/Cake/View/View.php(376): View->renderLayout('{"pluralize":"o...', 'default')
+#2 /Users/predominant/Projects/csf/inflector/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#3 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#4 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(InflectorsController), Object(CakeRequest), Object(CakeResponse))
+#5 /Users/predominant/Projects/csf/inflector/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2011-10-16 02:01:35 Error: [MissingLayoutException] Layout file "/Users/predominant/Projects/csf/inflector/app/View/Layouts/json/default.ctp" is missing.
+#0 /Users/predominant/Projects/csf/inflector/lib/Cake/View/View.php(396): View->_getLayoutFileName('default')
+#1 /Users/predominant/Projects/csf/inflector/lib/Cake/View/View.php(376): View->renderLayout('{"pluralize":"o...', 'default')
+#2 /Users/predominant/Projects/csf/inflector/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#3 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#4 /Users/predominant/Projects/csf/inflector/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(InflectorsController), Object(CakeRequest), Object(CakeResponse))
+#5 /Users/predominant/Projects/csf/inflector/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
