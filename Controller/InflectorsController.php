@@ -20,6 +20,8 @@ class InflectorsController extends AppController {
 		} elseif (isset($this->request->params['string'])) {
 			$string = $this->request->params['string'];
 		}
+
+		$string = urldecode($string);
 		
 		if ($string) {
 			$r = new ReflectionClass('Inflector');
