@@ -1,17 +1,24 @@
 <?php
+App::uses('AppController', 'Controller');
+
 class InflectorsController extends AppController {
-	
+
 	public $uses = null;
-	
+
 	public $components = array('RequestHandler');
-	
-	private $reflectExceptions = array(
+
+	protected $_reflectExceptions = array(
 		'_cache',
 		'reset',
 		'rules',
 		'variable',
 	);
-	
+
+	/**
+	 * InflectorsController::show()
+	 *
+	 * @return void
+	 */
 	public function show() {
 		$results = array();
 		$string = false;
@@ -22,11 +29,11 @@ class InflectorsController extends AppController {
 		}
 
 		$string = urldecode($string);
-		
+
 		if ($string) {
 			$r = new ReflectionClass('Inflector');
 			foreach ($r->getMethods() as $method) {
-				if (in_array($method->name, $this->reflectExceptions)) {
+				if (in_array($method->name, $this->_reflectExceptions)) {
 					continue;
 				}
 				$methodName = $method->name;
@@ -35,4 +42,5 @@ class InflectorsController extends AppController {
 		}
 		$this->set(compact('string', 'results'));
 	}
+
 }
