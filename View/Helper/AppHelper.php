@@ -1,5 +1,5 @@
 <?php
-App::uses('Helper', 'View/Helper');
+App::uses('Helper', 'View');
 
 class AppHelper extends Helper {
 }
