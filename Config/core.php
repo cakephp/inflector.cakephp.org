@@ -309,7 +309,7 @@ if (Configure::read('debug') >= 1) {
 Cache::config('_cake_core_', array(
 	'engine' => $engine,
 	'prefix' => 'cake_core_',
-	'path' => Inflector::slug(ROOT . DS . APP_DIR) . 'persistent' . DS,
+	'path' => Inflector::slug(ROOT . DS . APP_DIR . DS . 'persistent') . DS,
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
@@ -321,7 +321,7 @@ Cache::config('_cake_core_', array(
 Cache::config('_cake_model_', array(
 	'engine' => $engine,
 	'prefix' => 'cake_model_',
-	'path' => Inflector::slug(ROOT . DS . APP_DIR) . 'models' . DS,
+	'path' => Inflector::slug(ROOT . DS . APP_DIR . DS . 'models') . DS,
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
 ));
