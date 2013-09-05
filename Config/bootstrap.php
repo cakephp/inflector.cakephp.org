@@ -24,7 +24,12 @@
  */
 
 // Setup a 'default' cache configuration for use in the application.
-Cache::config('default', array('engine' => 'File'));
+Cache::config('default', array(
+   'engine' => 'Apc',
+   'prefix' => 'default_',
+   'path' => Inflector::slug(ROOT . DS . APP_DIR . DS . 'default') . DS,
+   'serialize' => false,
+));
 
 /**
  * The settings below can be used to set additional paths to models, views and controllers.
