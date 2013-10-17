@@ -24,6 +24,7 @@ class InflectorsController extends AppController {
 		$string = false;
 		if ($this->request->is('post')) {
 			$string = $this->request->data['string'];
+			return $this->redirect('/' . $string);
 		} elseif (isset($this->request->params['string'])) {
 			$string = $this->request->params['string'];
 		}
