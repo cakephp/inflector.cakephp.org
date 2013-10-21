@@ -23,7 +23,8 @@ class InflectorsController extends AppController {
 		$results = array();
 		$string = false;
 		if ($this->request->is('post')) {
-			$string = $this->request->data['string'];
+			$string = filter_var($this->request->data['string'], FILTER_SANITIZE_STRING);
+			return $this->redirect('/' . $string);
 		} elseif (isset($this->request->params['string'])) {
 			$string = $this->request->params['string'];
 		}
