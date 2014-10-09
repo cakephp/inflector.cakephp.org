@@ -1,0 +1,23 @@
+{
+  "name": "cakephp/inflector.cakephp.org",
+  "description": "CakePHP Inflector Website",
+  "type": "project",
+  "keywords" : [],
+  "homepage" : "http://inflector.cakephp.org",
+  "license" : "MIT",
+  "require" : {
+    "php" : ">=5.3",
+    "composer/installers" : "~1.0",
+    "cakephp/cakephp": "2.5.5"
+  },
+  "config": {
+    "preferred-install": "dist",
+    "vendor-dir": "Vendor"
+  },
+  "extra": {
+    "heroku": {
+      "document-root": "webroot",
+      "index-document": "index.php"
+    }
+  }
+}
