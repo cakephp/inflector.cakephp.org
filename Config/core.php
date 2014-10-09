@@ -106,7 +106,14 @@
  * included primarily as a development convenience - and
  * thus not recommended for production applications.
  */
-	//Configure::write('App.baseUrl', env('SCRIPT_NAME'));
+	// Conditionally disable mod_rewrite
+	if (php_sapi_name() != 'cli') {
+		if (function_exists('apache_get_modules') && !in_array('mod_rewrite', apache_get_modules())) {
+			Configure::write('App.baseUrl', env('SCRIPT_NAME'));
+		} elseif (php_sapi_name() == 'cli-server') {
+			Configure::write('App.baseUrl', '/');
+		}
+	}
 
 /**
  * To configure CakePHP to use a particular domain URL
