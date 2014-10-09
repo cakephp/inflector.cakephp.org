@@ -33,7 +33,7 @@
  * In production mode, flash messages redirect after a time interval.
  * In development mode, you need to click the flash message to continue.
  */
-	Configure::write('debug', 0);
+	Configure::write('debug', 2);
 
 /**
  * Configure the Error handler used to handle errors for your application. By default
@@ -367,7 +367,7 @@ $prefix = 'myapp_';
  */
 Cache::config('_cake_core_', array(
 	'engine' => $engine,
-	'prefix' => $prefix . 'cake_core_',
+	'prefix' => $prefix . 'inflector_production_cake_core_',
 	'path' => CACHE . 'persistent' . DS,
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
@@ -379,7 +379,7 @@ Cache::config('_cake_core_', array(
  */
 Cache::config('_cake_model_', array(
 	'engine' => $engine,
-	'prefix' => $prefix . 'cake_model_',
+	'prefix' => $prefix . 'inflector_production_cake_model_',
 	'path' => CACHE . 'models' . DS,
 	'serialize' => ($engine === 'File'),
 	'duration' => $duration
