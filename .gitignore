@@ -2,6 +2,7 @@
 #################################################
 /Config/database.php
 /tmp
+/Vendor/
 
 # OS generated files #
 ######################
