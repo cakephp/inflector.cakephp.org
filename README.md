@@ -2,4 +2,4 @@
 
 http://inflector.cakephp.org
 
-Running with CakePHP 2.5.5
+Running with CakePHP 2.9.2
