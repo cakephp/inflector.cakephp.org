@@ -1,6 +1,6 @@
 # CakePHP Inflector
 
-http://inflector.cakephp.org
+https://inflector.cakephp.org
 
 ## Deploying
 

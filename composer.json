@@ -1,7 +1,7 @@
 {
     "name": "cakephp/inflector.cakephp.org",
     "description": "CakePHP Inflector Website",
-    "homepage": "http://inflector.cakephp.org",
+    "homepage": "https://inflector.cakephp.org",
     "type": "project",
     "license": "MIT",
     "require": {
