@@ -11,6 +11,7 @@
  * @link          https://cakephp.org CakePHP(tm) Project
  * @since         0.10.0
  * @license       https://opensource.org/licenses/mit-license.php MIT License
+ * @var \App\View\AppView $this
  */
 ?>
 <!DOCTYPE html>
@@ -22,26 +23,31 @@
     </title>
     <?= $this->Html->meta('icon') ?>
 
-    <?= $this->Html->css('base.css') ?>
-    <?= $this->Html->css('cake.css') ?>
+    <?= $this->Html->css(['cake']) ?>
 
     <?= $this->fetch('meta') ?>
     <?= $this->fetch('css') ?>
     <?= $this->fetch('script') ?>
 </head>
 <body>
-    <div id="container">
-        <div id="header">
-            <h1><?= __('Error') ?></h1>
+    <nav class="bg-amber-50 border-b border-red-600">
+        <div class="flex justify-between max-w-4xl mx-auto py-4">
+            <div class="top-nav-title">
+                    <a class="text-xl" href="<?= $this->Url->build('/') ?>">
+                        <span class="text-gray-700 font-bold">Cake</span><span class="text-red-800 font-bold">PHP</span>
+                    </a>
+            </div>
+            <div class="flex gap-2">
+                <?= $this->Html->link('Docs', 'https://book.cakephp.org/5/', ['target' => '_blank', 'rel' => 'noopener']) ?>
+                <?= $this->Html->link('Api', 'https://api.cakephp.org/', ['target' => '_blank', 'rel' => 'noopener']) ?>
+            </div>
         </div>
-        <div id="content">
+    </nav>
+    <main class="main max-w-4xl mx-auto">
+        <div class="container">
             <?= $this->Flash->render() ?>
-
             <?= $this->fetch('content') ?>
         </div>
-        <div id="footer">
-            <?= $this->Html->link(__('Back'), 'javascript:history.back()') ?>
-        </div>
-    </div>
+    </main>
 </body>
 </html>

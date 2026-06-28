@@ -2,6 +2,22 @@
 
 https://inflector.cakephp.org
 
+## Local development
+
+```shell
+source setup/env
+composer install
+npm install
+npm run build
+bin/cake server
+```
+
+Run checks with:
+
+```shell
+composer check
+```
+
 ## Deploying
 
 On the Dokku server:

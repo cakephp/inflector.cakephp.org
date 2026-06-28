@@ -37,3 +37,11 @@ nbproject/*
 .vscode
 # Sass preprocessor
 .sass-cache/
+# node
+/node_modules/*
+# PHPUnit
+/.phpunit.cache
+
+# Local setup specific files #
+##############################
+/setup

@@ -1,4 +1,6 @@
 <?php
+declare(strict_types=1);
+
 /**
  * CakePHP(tm) : Rapid Development Framework (https://cakephp.org)
  * Copyright (c) Cake Software Foundation, Inc. (https://cakefoundation.org)
@@ -18,23 +20,25 @@ use Cake\View\View;
 /**
  * Application View
  *
- * Your application’s default view class
+ * Your application's default view class
  *
- * @link https://book.cakephp.org/3.0/en/views.html#the-app-view
+ * @link https://book.cakephp.org/5/en/views.html#the-app-view
  */
 class AppView extends View
 {
-
     /**
      * Initialization hook method.
      *
-     * Use this method to add common initialization code like loading helpers.
+     * Use this method to add common initialization code like adding helpers.
      *
-     * e.g. `$this->loadHelper('Html');`
+     * e.g. `$this->addHelper('Html');`
      *
      * @return void
      */
-    public function initialize()
+    public function initialize(): void
     {
+        $this->loadHelper('Paginator', ['templates' => 'paginator-templates']);
+        $this->loadHelper('Form', ['templates' => 'form-templates']);
+        $this->loadHelper('Html', ['templates' => 'html-templates']);
     }
 }
